@@ -4,8 +4,8 @@
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_EXTERNAL_NAMES="INMYS"
-BR2_EXTERNAL_INMYS_PATH="/mnt/d/testtask/build/buildroot-external-inmys"
-BR2_EXTERNAL_INMYS_VERSION="-g913b44f"
+BR2_EXTERNAL_INMYS_PATH="/home/vboxuser/src/buildroot-external-inmys"
+BR2_EXTERNAL_INMYS_VERSION="-g272e86c"
 BR2_HOST_GCC_AT_LEAST_4_9=y
 BR2_HOST_GCC_AT_LEAST_5=y
 BR2_HOST_GCC_AT_LEAST_6=y
@@ -14,10 +14,6 @@ BR2_HOST_GCC_AT_LEAST_8=y
 BR2_HOST_GCC_AT_LEAST_9=y
 BR2_HOST_GCC_AT_LEAST_10=y
 BR2_HOST_GCC_AT_LEAST_11=y
-BR2_HOST_GCC_AT_LEAST_12=y
-BR2_HOST_GCC_AT_LEAST_13=y
-BR2_HOST_GCC_AT_LEAST_14=y
-BR2_HOST_GCC_AT_LEAST_15=y
 
 #
 # Target options
@@ -1378,15 +1374,12 @@ BR2_PACKAGE_SDL2=y
 #
 # X11 video driver needs X.org
 #
-
-#
-# KMS/DRM video driver needs a GBM provider, and OpenGL or OpenGLES+EGL
-#
+BR2_PACKAGE_SDL2_KMSDRM=y
 
 #
 # OpenGL support needs X11 and an OpenGL provider
 #
-# BR2_PACKAGE_SDL2_OPENGLES is not set
+BR2_PACKAGE_SDL2_OPENGLES=y
 # BR2_PACKAGE_SDL2_GFX is not set
 # BR2_PACKAGE_SDL2_IMAGE is not set
 BR2_PACKAGE_SDL2_MIXER=y
@@ -4634,5 +4627,5 @@ BR2_TARGET_UBOOT_CUSTOM_PATCH_DIR=""
 #
 
 #
-# INMYS (in /mnt/d/testtask/build/buildroot-external-inmys)
+# INMYS (in /home/vboxuser/src/buildroot-external-inmys)
 #
