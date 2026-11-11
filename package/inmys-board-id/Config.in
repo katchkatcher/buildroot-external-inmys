@@ -1,5 +1,0 @@
-config BR2_PACKAGE_INMYS_BOARD_ID
-	bool "inmys-board-id"
-	depends on BR2_LINUX_KERNEL
-	help
-	  Board ID reader for NMS-SM-RK3568.
