@@ -11,7 +11,7 @@ diff -urN a/Documentation/devicetree/bindings/misc/inmys,board-id.yaml b/Documen
 +title: INMYS board ID reader
 +
 +maintainers:
-+  - TODO Name <TODO@example.com>
++  - Daniil Loban <loban.d@elcomchip.ru>
 +
 +description: |
 +  A board revision is encoded with strap resistors on a set of GPIO lines.
